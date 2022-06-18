@@ -28,7 +28,7 @@ const Register = () => {
       <div className="body">
         <div className="image"></div>
 
-        <p className="paragraph-register"> Register</p>
+        <p className="paragraph-register"> Register Test</p>
         <div className="form">
 
           <form method="GET" >
