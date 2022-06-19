@@ -1,43 +1,25 @@
 import React from "react";
 import '../login/Login.css'
 import { Link } from "react-router-dom";
+import { Context } from "../Context";
 
 const Login = () => {
 
-    const [email, setEmail] = React.useState(" ");
+    const [username, setUsername] = React.useState(" ");
     const [password, setPassowrd] = React.useState(' ')
+    const context = React.useContext(Context)
 
     const handleSubmit = async (event) => {
-        event.preventDefault();
-        // alert('hello, email ' + password + " " + email)
-
-        try {
-            const res = await fetch('', {
-                method: 'post',
-                body: JSON.stringify({
-                    email: email,
-                    password: password
-                }),
-                headers: {
-                    // 'Access-Control-Allow-Origin':'*',
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                }
-            })
-            const jsonRes = await res.json()
-            console.log(jsonRes)
-        } catch (error) {
-            console.log(error, 'erroare')
-        }
+        context.dispatch({code:'LOGIN-USER', payload:{username, password}})
     }
 
-
-    const handleEmailChange = (event) => {
-        setEmail(event.target.value)
+    const handleUsernameChange = (event) => {
+        setUsername(event.target.value)
     }
     const handlePasswordChange = (event) => {
         setPassowrd(event.target.value)
     }
+    
 
     return <>
         <div className="form-body">
@@ -48,7 +30,7 @@ const Login = () => {
 
                 <div className="group-input">
                     <label for='username' className="label-user-login"> Username</label>
-                    <input type="email" id="user-login" onChange={(event) => handleEmailChange(event)}></input>
+                    <input type="text" id="user-login" onChange={(event) => handleUsernameChange(event)}></input>
                 </div>
 
                 <div className="group-input">
@@ -57,7 +39,7 @@ const Login = () => {
                 </div>
 
             </form>
-            <button className="button-log" type="submit" >Submit</button>
+            <Link to='/page-with-forms'><button className="button-log" type="submit"  >Submit</button></Link>
 
             <div className="nav-to-register">
                 <p className="nav-para-register"> Don't have an account? </p>
