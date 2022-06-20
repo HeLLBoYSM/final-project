@@ -8,6 +8,8 @@ import Login from './login/Login';
 import PageWithForms from './pages/PageWithForms';
 import FirstTest from './test-1/FirstTest';
 import { Provider } from './Context';
+import SecondTest from './test-2/SecondTest';
+import ThirdTest from './test-3/ThirdTest';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,6 +24,8 @@ root.render(
       <Route path='/' element={<Register></Register>}></Route>
       <Route path='/page-with-forms' element={<PageWithForms></PageWithForms>}></Route>
       <Route path='/first-test' element={<FirstTest></FirstTest>}></Route>
+      <Route path='/second-test' element={<SecondTest></SecondTest>}></Route>
+      <Route path='/third-test' element={<ThirdTest></ThirdTest>}></Route>
 
       </Routes>
     </BrowserRouter>
