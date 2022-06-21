@@ -1,5 +1,6 @@
 import React from "react";
 import '../pages/PWF.css'
+import { Link } from "react-router-dom";
 
 const PageWithForms = () => {
     return <>
@@ -12,10 +13,10 @@ const PageWithForms = () => {
                 <h3>Teste de personalitate</h3>
                 <ul>
                     <li>
-                        <a href="#">Afla ce cred ceilalti despre tine!</a>
+                        <Link to='/first-test'>Afla ce cred ceilalti despre tine!</Link>
                     </li>
                     <li>
-                        <a href="#">Cat de vulnerabil esti la stres?</a>
+                        <Link to='/second-test'>Cat de vulnerabil esti la stres?</Link>
                     </li>
                     <li>
                         <a href="#">Cum te simti in pielea ta ?</a>
@@ -32,7 +33,7 @@ const PageWithForms = () => {
                 <h3>Teste de aptitudini</h3>
                 <ul>
                     <li>
-                        <a href="#">Dominatia creierului tau</a>
+                        <Link to='/third-test'>Dominatia creierului tau</Link>
                     </li>
                     <li>
                         <a href="#">Testeaza-ti capacitatea de concentrare</a>

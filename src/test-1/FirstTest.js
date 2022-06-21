@@ -11,6 +11,10 @@ import SixthQuestion from "./SixthQuestion";
 import TenthQuestion from "./TenthQuestion";
 import ThirdQuestion from "./ThirdQuestion";
 
+
+// useState pentru fiecare intrebare 
+// cate un handle pentru fiecare grup de radio buttons
+
 const FirstTest = () => {
     return <>
         
