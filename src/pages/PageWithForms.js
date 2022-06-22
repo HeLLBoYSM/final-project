@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const PageWithForms = () => {
     return <>
-
+         <div className="the-box">  
         <h2> Teste Psihologice</h2>
 
         <div className="content">
@@ -36,7 +36,7 @@ const PageWithForms = () => {
                         <Link to='/third-test'>Dominatia creierului tau</Link>
                     </li>
                     <li>
-                        <a href="#">Testeaza-ti capacitatea de concentrare</a>
+                        <Link to='/fourth-test'>Testeaza-ti capacitatea de concentrare</Link>
                     </li>
                     <li>
                         <a href="#">Test de analogie</a>
@@ -49,6 +49,7 @@ const PageWithForms = () => {
 
             </div>
         </div>
+        </div> 
     </>
 }
 export default PageWithForms

@@ -35,7 +35,7 @@ const Register = () => {
       <div className="body">
         <div className="image"></div>
 
-        <p className="paragraph-register"> Register Test</p>
+        <p className="paragraph-register"> REGISTER</p>
         <div className="form">
 
           <form method="GET" >
