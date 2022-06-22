@@ -10,6 +10,7 @@ import FirstTest from './test-1/FirstTest';
 import { Provider } from './Context';
 import SecondTest from './test-2/SecondTest';
 import ThirdTest from './test-3/ThirdTest';
+import FourthTest from './test-4/FourthTest';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -26,6 +27,7 @@ root.render(
       <Route path='/first-test' element={<FirstTest></FirstTest>}></Route>
       <Route path='/second-test' element={<SecondTest></SecondTest>}></Route>
       <Route path='/third-test' element={<ThirdTest></ThirdTest>}></Route>
+      <Route path='/fourth-test' element={<FourthTest></FourthTest>}></Route>
 
       </Routes>
     </BrowserRouter>
