@@ -15,7 +15,7 @@ import ThirdQuestion from "./ThirdQuestion";
 // useState pentru fiecare intrebare 
 // cate un handle pentru fiecare grup de radio buttons
 
-
+// un useState ganeral , cu un handler si un array cu response
 
 
 const FirstTest = () => {

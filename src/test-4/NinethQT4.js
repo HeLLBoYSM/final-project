@@ -32,7 +32,7 @@ const NinethQT4 = (props) => {
 
                 <div className="test-abif">
 
-                    <input name="q1" onClick={2} type="radio"></input>
+                    <input name="q9" onChange={ () => (props.handleSetResponse(3))} checked={props.response === 3} type="radio"></input>
 
                 </div>
 
