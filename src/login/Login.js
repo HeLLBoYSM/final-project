@@ -22,6 +22,7 @@ const Login = () => {
     
 
     return <>
+    <div className="login-content">
         <div className="form-body">
 
             <p className="paragraph-login">Login</p>
@@ -39,13 +40,14 @@ const Login = () => {
                 </div>
 
             </form>
-            <Link to='/page-with-forms'><button className="button-log" type="submit"  >Submit</button></Link>
+            <Link to='/page-with-forms'><button className="button-log" type="submit" onClick={(e) => handleSubmit(e)}  >Submit</button></Link>
 
             <div className="nav-to-register">
                 <p className="nav-para-register"> Don't have an account? </p>
               <Link to='/'> <button className="button-register" type="submit">Register</button></Link>
 
             </div>
+        </div>
         </div>
     </>
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-const SeventhQuestion = () => {
+const SeventhQuestion = (props) => {
     return <>
         <div className="question">
             <div className="test-qnr">7</div>
@@ -9,7 +9,7 @@ const SeventhQuestion = () => {
             <div className="test-a">
 
                 <div className="test-abif">
-                    <input name="q1" onClick={1} type="radio"></input>
+                    <input name="q7" onChange={ () => (props.handleSetResponse(1))} checked={props.response === 1} type="radio"></input>
                 </div>
 
                 <div className="test-atxt">Esti fericit de o pauza.</div>
@@ -19,7 +19,7 @@ const SeventhQuestion = () => {
 
                 <div className="test-abif">
 
-                    <input name="q1" onClick={2} type="radio"></input>
+                    <input name="q7" onChange={ () => (props.handleSetResponse(2))} checked={props.response === 2} type="radio"></input>
 
                 </div>
 
@@ -35,7 +35,7 @@ const SeventhQuestion = () => {
 
                 <div className="test-abif">
 
-                    <input name="q1" onClick={3} type='radio'></input>
+                    <input name="q7" onChange={ () => (props.handleSetResponse(3))} checked={props.response === 3} type='radio'></input>
 
                 </div>
 
