@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css';
-import { Link } from 'react-router-dom';
+import { Link,  useNavigate} from 'react-router-dom';
 import { Context } from '../Context';
 
 const Register = () => {
@@ -9,7 +9,12 @@ const Register = () => {
   const [password, setPassowrd] = React.useState('')
   const [username, setUsername] = React.useState('')
   const context = React.useContext(Context)
-
+  
+  const navigate = useNavigate()
+  React.useEffect(() => {
+    return () => {
+    navigate('/login' ) } } , 
+    [context.state.logedIn])
 
   const handleEmailChange = (event) => {
     console.log(event.target.value)
@@ -26,6 +31,7 @@ const Register = () => {
   }
   const handleSubmit = (e) => {
     context.dispatch({code:'ADD-USER', payload:{username,password,email}})
+    navigate('/login')
   }
   console.log(context.state)
 
