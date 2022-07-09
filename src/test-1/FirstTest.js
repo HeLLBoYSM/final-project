@@ -65,7 +65,6 @@ const FirstTest = () => {
     const handleSetResponse10 = (newValue) => {
         setResponese10(newValue)
     }
-    console.log(response , response2 , response4, response10)
     return <>
         
 

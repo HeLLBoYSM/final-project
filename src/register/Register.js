@@ -11,10 +11,7 @@ const Register = () => {
   const context = React.useContext(Context)
   
   const navigate = useNavigate()
-  React.useEffect(() => {
-    return () => {
-    navigate('/login' ) } } , 
-    [context.state.logedIn])
+ 
 
   const handleEmailChange = (event) => {
     console.log(event.target.value)

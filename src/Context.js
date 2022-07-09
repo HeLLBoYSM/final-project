@@ -3,7 +3,11 @@ import React from "react";
 
 
 const initialState = {
-    users: [],
+    users: [{
+        username:'Admin123',
+        password:'Admin123',
+        email:'admin123@yahoo.com'
+    }],
     logedIn: false
 }
 
@@ -13,7 +17,7 @@ const reducer = (state, action) => {
         case "ADD-USER":
             return ({ ...state, users: [...state.users, action.payload] })
 
-        case "LOGIN-USER":
+        case "LOGIN-USER":           
             const user = action.payload
             const logedIn = !!state.users.find(({ username, password }) =>
                 username === user.username && password === user.password)
