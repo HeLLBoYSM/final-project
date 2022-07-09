@@ -22,7 +22,6 @@ root.render(
 
       <Route path='/' element={<Register></Register>}></Route>
       <Route path='/login' element={<Login></Login>}></Route>
-      <Route path='/' element={<Register></Register>}></Route>
       <Route path='/page-with-forms' element={<PageWithForms></PageWithForms>}></Route>
       <Route path='/first-test' element={<FirstTest></FirstTest>}></Route>
       <Route path='/second-test' element={<SecondTest></SecondTest>}></Route>

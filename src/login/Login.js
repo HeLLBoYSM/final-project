@@ -1,6 +1,6 @@
 import React from "react";
 import '../login/Login.css'
-import { Link } from "react-router-dom";
+import { Link , useNavigate} from "react-router-dom";
 import { Context } from "../Context";
 
 const Login = () => {
@@ -8,9 +8,17 @@ const Login = () => {
     const [username, setUsername] = React.useState(" ");
     const [password, setPassowrd] = React.useState(' ')
     const context = React.useContext(Context)
+    const navigate = useNavigate()
+    
+  React.useEffect(() => {
+    if(context.state.logedIn === true) {
+        navigate('/page-with-forms' )
+    }
+     }  , 
+    [context.state.logedIn])
 
     const handleSubmit = async (event) => {
-        context.dispatch({code:'LOGIN-USER', payload:{username, password}})
+        context.dispatch({code:'LOGIN-USER', payload:{username, password}})   
     }
 
     const handleUsernameChange = (event) => {
@@ -40,7 +48,7 @@ const Login = () => {
                 </div>
 
             </form>
-            <Link to='/page-with-forms'><button className="button-log" type="submit" onClick={(e) => handleSubmit(e)}  >Submit</button></Link>
+            <button className="button-log" type="submit" onClick={(event) => handleSubmit(event)}  >Submit</button>
 
             <div className="nav-to-register">
                 <p className="nav-para-register"> Don't have an account? </p>
