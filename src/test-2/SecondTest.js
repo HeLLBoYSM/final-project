@@ -10,6 +10,9 @@ import SeventhQT2 from "./SeventhQT2";
 import EithQT2 from "./EithQT2";
 import NinethQT2 from "./NinethQT2";
 import TenthQT2 from "./TenthQT2";
+import Answer4 from "../test-answers/Test1Answer1";
+import Answer5 from "../test-answers/Test2A2";
+import Answer6 from "../test-answers/Test2A3";
 
 const SecondTest = () => {
     const [totalResult, setTotalResult] = React.useState()
@@ -84,9 +87,12 @@ const SecondTest = () => {
             <div className="btn">
                 <button type="submit" className="btn-finalizare" onClick={() =>{handleSubmit()}}>Finalizare</button>
             </div>
+        
+
+        {totalResult == 10 ? <Answer4></Answer4> : ""}
+        {totalResult > 10 && totalResult < 20 ? <Answer5></Answer5> : ""}
+        {totalResult == 20 ? <Answer6></Answer6> : ""}
         </div>
-
-
     </>
 
 }

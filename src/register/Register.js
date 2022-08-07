@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.css';
+import './Register.css';
 import { Link,  useNavigate} from 'react-router-dom';
 import { Context } from '../Context';
 
@@ -69,7 +69,7 @@ const Register = () => {
 
         <div className=" to-login">
           <p className='already-account'>Have an account already?</p>
-          <Link to='/login'> <button className="button-log" type="submit" onClick={() => handleLoginButton()}> Login</button></Link>
+          <Link to='/login'> <button className="button-log-register" type="submit" onClick={() => handleLoginButton()}> Login</button></Link>
         </div>
 
       </div>

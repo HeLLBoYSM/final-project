@@ -15,6 +15,15 @@ code {
 }
 
 
-#root {
+#root{
   height: 100vh;
+}
+button{
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  padding: 5px 20px 5px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
 }
