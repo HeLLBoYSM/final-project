@@ -64,7 +64,17 @@
   outline-color: #b58f12;
 transition: none;
 } 
+.button-log-register{
+      width: 100px;
+      height: 30px;
+      margin: auto;
+      padding: 5px 20px 5px 20px;
+      border-radius: 4px;
+      border: none;
+      /* margin-top: 30px; */
+      cursor: pointer;
 
+}
 
 .input-label-pass{
   position:absolute;
@@ -124,13 +134,12 @@ transition: none;
 }
 
 .button-submit {
+  
   display: flex;
   margin: auto;
-  padding: 5px 20px 5px 20px;
-  border-radius: 4px;
-  border: none;
+  
   background-color: rgb(191, 215, 112);
-  cursor: pointer;
+  
 }
 
 
