@@ -63,7 +63,7 @@ const Register = () => {
           </form>
 
         </div>
-        <div>
+        <div className='btn-sub-reg'>
           <button className="button-submit" type="submit" onClick={(e) => handleSubmit(e)}>Submit</button>
         </div>
 

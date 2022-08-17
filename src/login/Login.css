@@ -8,13 +8,17 @@
 }
 
 .form-body{ 
-    background-color: rgb(178, 120, 237);
-    border: 1px solid black;
+    /* background-color: rgb(178, 120, 237); */
+    background: #243B67;
+    background: -moz-radial-gradient(center, #243B67 0%, #6E5DCF 50%, #C27DFC 100%);
+    background: -webkit-radial-gradient(center, #243B67 0%, #6E5DCF 50%, #C27DFC 100%);
+    background: radial-gradient(ellipse at center, #243B67 0%, #6E5DCF 50%, #C27DFC 100%);
+    border: 1px solid rgb(240, 156, 245);
     width: 300px;  /*100% */
     height: 400px;
     margin: auto;
     border-radius: 10px;
-    
+   
     
 }
 .paragraph-login {
@@ -89,21 +93,84 @@
     display: flex;
     justify-content: center;
   }
-  .button-log-login{
-      margin: auto;
-      margin-top: 30px;
+ 
+  .button-log-login {
+    margin: auto;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    background: #243B67;
+    background: -moz-radial-gradient(center, #324467 0%, #8C82CF 50%, #E3C6FC 100%);
+    background: -webkit-radial-gradient(center, #324467 0%, #8C82CF 50%, #E3C6FC 100%);
+    background: radial-gradient(ellipse at center, #324467 0%, #8C82CF 50%, #E3C6FC 100%);
+    color:#fff;
+    border-radius:30px;
+    transition:transform 0.3s ease;
+  }
+  .button-log-login::after, .button-log-login::before{
+   content:"";
+   position:absolute;
+   opacity:0.3;
+   background:#000;
+   border-radius:inherit;
+   width:100%;
+   height:100%;
+   left:0;
+   bottom:0;
+   z-index:-1;
+   transition:transform 0.3s ease;
+  }
+  .button-log-login:hover{
+   transform:translate(-6px, -12px)
+  }
+                
+  .button-log-login:hover::after{
+   transform:translate(6px, 6px)
+  }
+  
+  .button-log-login:hover::before{
+   transform:translate(12px, 12px)
   }
 
   .nav-para-register{
       text-align: center;
       margin-top: 50px;
   }
-  .button-register{
-      display: flex;
-      margin:auto;
-     
-      text-decoration: none;
-      
+
+  .button-to-register {
+    display: flex;
+    margin: auto;
+    letter-spacing: 2px;
+    background: #243B67;
+    background: -moz-radial-gradient(center, #324467 0%, #8C82CF 50%, #E3C6FC 100%);
+    background: -webkit-radial-gradient(center, #324467 0%, #8C82CF 50%, #E3C6FC 100%);
+    background: radial-gradient(ellipse at center, #324467 0%, #8C82CF 50%, #E3C6FC 100%);
+    color:#fff;
+    border-radius:30px;
+    transition:transform 0.3s ease;
+  }
+  .button-to-register::after, .button-to-register::before{
+   content:"";
+   position:absolute;
+   opacity:0.3;
+   background:#000;
+   border-radius:inherit;
+   width:100%;
+   height:100%;
+   left:0;
+   bottom:0;
+   z-index:-1;
+   transition:transform 0.3s ease;
+  }
+  .button-to-register:hover{
+   transform:translate(-6px, -12px)
+  }
+                
+  .button-to-register:hover::after{
+   transform:translate(6px, 6px)
+  }
+  
+  .button-to-register:hover::before{
+   transform:translate(12px, 12px)
   }
 
   @media (max-width:400px) {

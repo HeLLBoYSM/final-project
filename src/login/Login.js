@@ -53,7 +53,7 @@ const Login = () => {
                 </div>
                 <div className="nav-to-register">
                     <p className="nav-para-register"> Don't have an account? </p>
-                    <Link to='/'> <button className="button-register" type="submit">Register</button></Link>
+                    <Link to='/'> <button className="button-to-register" type="submit">Register</button></Link>
 
                 </div>
             </div>

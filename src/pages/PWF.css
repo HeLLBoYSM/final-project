@@ -1,5 +1,5 @@
 .the-box {
-    background-image: url(../images/photo2.png);
+    background-image: url(../images/psychological-photo.png);
     background-size: cover;
     background-position: center;
     width: calc(100% - 200px);
@@ -12,19 +12,24 @@ h2 {
     justify-content: center;
     text-align: center;
     margin-bottom: 50px;
+    letter-spacing: 6px;
+
 }
 
 .content {
     width: 500px;
     height: 500px;
-    background-color: rgb(204, 204, 236);
-    border-radius: 8px;
+    /* background-color: rgb(204, 204, 236); */
+    background: #FBA76F;
+    background: -moz-linear-gradient(left, #FBA76F 0%, #EEA2EA 50%, #61D8DC 100%);
+    background: -webkit-linear-gradient(left, #FBA76F 0%, #EEA2EA 50%, #61D8DC 100%);
+    background: linear-gradient(to right, #FBA76F 0%, #EEA2EA 50%, #61D8DC 100%);
     margin: auto;
     box-shadow: 15px 2px 18px 8px rgba(88, 86, 86, 0.67);
 }
 
 .first-paragraph {
-    font-size: 11px;
+    font-size: 13px;
     color: #706f74;
     padding: 5px;
     text-align: center;
@@ -33,14 +38,26 @@ h2 {
 .list-box li {
     list-style-type: none;
     text-decoration: none;
-    margin-left: 30px;
+    margin-left: -50px;
+    text-align: center;
 }
 
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover, a:focus{
+    color: blue
+}
 
 h3 {
     display: flex;
     justify-content: center;
     text-align: center;
+    text-shadow: 9px 0px 10px #000000;
+    letter-spacing: 2px;
+    
 }
 
 @media (max-width:400px) {
