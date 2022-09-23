@@ -19,7 +19,6 @@ h2 {
 .content {
     width: 500px;
     height: 500px;
-    /* background-color: rgb(204, 204, 236); */
     background: #FBA76F;
     background: -moz-linear-gradient(left, #FBA76F 0%, #EEA2EA 50%, #61D8DC 100%);
     background: -webkit-linear-gradient(left, #FBA76F 0%, #EEA2EA 50%, #61D8DC 100%);

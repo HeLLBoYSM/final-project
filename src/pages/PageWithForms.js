@@ -8,7 +8,9 @@ const PageWithForms = () => {
         <h2> Teste Psihologice</h2>
 
         <div className="content">
-            <p className="first-paragraph">Cat de bine te cunosti pe tine insuti? Testele de personalitate te ajuta sa te explorezi obiectiv si sa descoperi adevarul despre tine.</p>
+            <p className="first-paragraph">Cat de bine te cunosti pe tine insuti? 
+                Testele de personalitate te ajuta sa te explorezi obiectiv si 
+                sa descoperi adevarul despre tine.</p>
             <div className="list-box">
                 <h3>Teste de personalitate</h3>
                 <ul>
