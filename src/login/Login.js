@@ -38,23 +38,25 @@ const Login = () => {
                 <form className="the-form">
 
                     <div className="group-input">
+                        <input type="text" className="user-input" id="user-login" placeholder="Username" onChange={(event) => handleUsernameChange(event)}></input>
                         <label for='username' className="label-user-login"> Username</label>
-                        <input type="text" id="user-login" placeholder=" " onChange={(event) => handleUsernameChange(event)}></input>
+                        
                     </div>
 
                     <div className="group-input">
+                        <input type="password"className="user-pass" id="pass-login" placeholder="Password" onChange={(event) => handlePasswordChange(event)}></input>
                         <label for="password" className="laber-pass-login">Password</label>
-                        <input type="password" id="pass-login" onChange={(event) => handlePasswordChange(event)}></input>
+                        
                     </div>
 
                 </form>
                 <div className="submit-btn">
                     <button className="button-log-login" type="submit" onClick={(event) => handleSubmit(event)}  >Submit</button>
                 </div>
+
                 <div className="nav-to-register">
                     <p className="nav-para-register"> Don't have an account? </p>
                     <Link to='/'> <button className="button-to-register" type="submit">Register</button></Link>
-
                 </div>
             </div>
         </div>

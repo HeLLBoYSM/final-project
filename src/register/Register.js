@@ -44,19 +44,22 @@ const Register = () => {
           <form method="GET" >
 
             <div className="input-group">
+              <input type="text" className="input-user" placeholder='Username' id="user" required onChange={(event) => handleUsernameChange(event)}></input>
               <label for="username" className='input-label-user' >Username</label>
-              <input type="text" className="input" id="user" required onChange={(event) => handleUsernameChange(event)}></input>
+              
             </div>
 
             <div className="input-group">
+              <input type="password" className="input-pass" placeholder='Password' id="pass" required onChange={(event) => handlePasswordChange(event)}></input>
               <label for='password' className='input-label-pass'>Password</label>
-              <input type="password" id="pass" required onChange={(event) => handlePasswordChange(event)}></input>
+              
 
             </div>
 
             <div className="input-group">
+              <input type="email" className='input-email' placeholder='Email' id="email"  onChange={(event) => handleEmailChange(event)} required></input>
               <label for="email" className='input-label-email' > Email</label>
-              <input type="email" id="email" required onChange={(event) => handleEmailChange(event)}></input>
+              
             </div>
 
 
@@ -64,7 +67,7 @@ const Register = () => {
 
         </div>
         <div className='btn-sub-reg'>
-          <button className="button-submit" type="submit" onClick={(e) => handleSubmit(e)}>Submit</button>
+          <button className="button-submit" data-test-id="submit-button" type="submit" onClick={(e) => handleSubmit(e)}>Submit</button>
         </div>
 
         <div className=" to-login">

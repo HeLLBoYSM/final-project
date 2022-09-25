@@ -22,10 +22,7 @@ const reducer = (state, action) => {
             const logedIn = !!state.users.find(({ username, password }) =>
                 username === user.username && password === user.password)
             return ({ ...state, logedIn })
-            // return ({ ...state, logedIn: true })
-
-
-
+            
         default:
             return state
     }

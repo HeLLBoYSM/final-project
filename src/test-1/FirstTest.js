@@ -16,20 +16,14 @@ import Question from "../components/Question"
 import Answer2 from "../test-answers/Test1Answer2";
 
 
-// useState pentru fiecare intrebare 
-// cate un handle pentru fiecare grup de radio buttons
-
-// un useState ganeral , cu un handler si un array cu response
 
 
 const FirstTest = () => {
     const [totalResult, setTotalResult] = React.useState()
     const handleSubmit = () => {
-        setTotalResult(response + response2 + response3 + response4 + response5 + response6 + response7 + response8 + response9 + response10)
+        setTotalResult(response + response2 + response3 + response4
+         + response5 + response6 + response7 + response8 + response9 + response10)
     }
-    console.log(totalResult)
-
-
 
     const [response, setResponese] = React.useState(null)
     const handleSetResponse = (newValue) => {

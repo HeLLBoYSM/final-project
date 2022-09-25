@@ -8,7 +8,6 @@
 }
 
 .body {
-  /* background-color: rgb(178, 120, 237); */
   background: #21605D;
   background: -moz-radial-gradient(center, #21605D 0%, #339476 53%, #87E1C7 100%);
   background: -webkit-radial-gradient(center, #21605D 0%, #339476 53%, #87E1C7 100%);
@@ -44,6 +43,9 @@
   position: relative;
   margin-top: 5px;
 }
+.input-user::placeholder, .input-email::placeholder, .input-pass::placeholder{
+  color: transparent;
+}
 
 .input-label-user {
   position: absolute;
@@ -64,10 +66,10 @@
   outline: 2px solid #fff;
 }
 
-.input-group:focus-within .input-label-user {
+.input-user:focus + .input-label-user,
+.input-user:not(:placeholder-shown) + .input-label-user {
   transform: translate(0, -30px)scale(.8);
-
-  color: #d1c5fc;
+  color: #fff;
 }
 
 .input-group:focus-within #user {
@@ -82,9 +84,7 @@
   padding: 5px 20px 5px 20px;
   border-radius: 4px;
   border: none;
-  /* margin-top: 30px; */
   cursor: pointer;
-
 }
 
 .input-label-pass {
@@ -94,10 +94,10 @@
   transform: translate(10px 10px);
   transform-origin: center;
   transition: transform .25s;
-
 }
 
-.input-group:focus-within .input-label-pass {
+.input-pass:focus + .input-label-pass,
+.input-pass:not(:placeholder-shown) + .input-label-pass {
   transform: translate(0, -28px)scale(.8);
   color: #d1c5fc;
 }
@@ -126,7 +126,8 @@
   transition: transform .25s;
 }
 
-.input-group:focus-within .input-label-email {
+.input-email:focus + .input-label-email,
+.input-email:not(:placeholder-shown) + .input-label-email {
   transform: translate(0, -28px)scale(.8);
   color: #d1c5fc;
 }
@@ -147,7 +148,6 @@
 }
 
 .button-submit {
-
   display: flex;
   margin: auto;
   letter-spacing: 2px;
@@ -159,33 +159,36 @@
   background: -moz-radial-gradient(center, #496585 0%, #4C947E 50%, #A1E1D0 100%);
   background: -webkit-radial-gradient(center, #496585 0%, #4C947E 50%, #A1E1D0 100%);
   background: radial-gradient(ellipse at center, #496585 0%, #4C947E 50%, #A1E1D0 100%);
-  color:#fff;
-  border-radius:30px;
-  transition:transform 0.3s ease;
-}
-.button-submit::after, .button-submit::before{
- content:"";
- position:absolute;
- opacity:0.3;
- background:#000;
- border-radius:inherit;
- width:100%;
- height:100%;
- left:0;
- bottom:0;
- z-index:-1;
- transition:transform 0.3s ease;
-}
-.button-submit:hover{
- transform:translate(-6px, -12px)
-}
-              
-.button-submit:hover::after{
- transform:translate(6px, 6px)
+  color: #fff;
+  border-radius: 30px;
+  transition: transform 0.3s ease;
 }
 
-.button-submit:hover::before{
- transform:translate(12px, 12px)
+.button-submit::after,
+.button-submit::before {
+  content: "";
+  position: absolute;
+  opacity: 0.3;
+  background: #000;
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.button-submit:hover {
+  transform: translate(-6px, -12px)
+}
+
+.button-submit:hover::after {
+  transform: translate(6px, 6px)
+}
+
+.button-submit:hover::before {
+  transform: translate(12px, 12px)
 }
 
 
@@ -195,33 +198,36 @@
   background: -moz-radial-gradient(center, #496585 0%, #62bea3 50%, #A1E1D0 100%);
   background: -webkit-radial-gradient(center, #496585 0%, #4C947E 50%, #A1E1D0 100%);
   background: radial-gradient(ellipse at center, #496585 0%, #4C947E 50%, #A1E1D0 100%);
-  color:#fff;
-  border-radius:30px;
-  transition:transform 0.3s ease;
-}
-.button-log-register::after, .button-log-register::before{
- content:"";
- position:absolute;
- opacity:0.3;
- background:#000;
- border-radius:inherit;
- width:100%;
- height:100%;
- left:0;
- bottom:0;
- z-index:-1;
- transition:transform 0.3s ease;
-}
-.button-log-register:hover{
- transform:translate(-6px, -12px)
-}
-              
-.button-log-register:hover::after{
- transform:translate(6px, 6px)
+  color: #fff;
+  border-radius: 30px;
+  transition: transform 0.3s ease;
 }
 
-.button-log-register:hover::before{
- transform:translate(12px, 12px)
+.button-log-register::after,
+.button-log-register::before {
+  content: "";
+  position: absolute;
+  opacity: 0.3;
+  background: #000;
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.button-log-register:hover {
+  transform: translate(-6px, -12px)
+}
+
+.button-log-register:hover::after {
+  transform: translate(6px, 6px)
+}
+
+.button-log-register:hover::before {
+  transform: translate(12px, 12px)
 }
 
 
